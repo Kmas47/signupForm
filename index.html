@@ -1,0 +1,51 @@
+<html lang="en-CA">
+    <head>
+        <meta charset="UTF-8" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <title>Sign-up Form</title>
+        <link rel="stylesheet" href="./assets/css/stylesheet.css" />
+        <script type="text/javascript" src="./assets/js/main.js"></script> 
+    </head>
+    <body>
+        <div class="container">
+            <div class="title">
+                <h1 class="font-mont">INTERNSHIP SIGNUP FORM</h1>
+            </div>
+            <div class="high-light">
+                <div class="inner-high-light red"></div>
+                <div class="inner-high-light"></div>
+                <div class="inner-high-light"></div>
+                <div class="inner-high-light"></div>
+            </div>
+            <div id="thankyou" class="paragraph">
+                <p class="font-mont font35 spacing">Thanks for your interest!</p>
+                <p class="font-merriweather font20">We will review your application and contact you for additional information should your background and experience meet the requirements of one of our openings.</p>
+            </div>
+           <div id="hide" class="paragraph">
+               <p class="font-merriweather font20">Prepare for your career with a Project Management, Web-Development, Graphic design, or Digital Marketing Internship at Northern</p>
+           </div>
+           <div class="signup-form">
+               <form id="signup-form-id">
+                    <div id="hidden">
+                        <p class="right">please enter a valid email address</p>
+                        <div class="right"></div>
+                    </div>
+                   <div class="form-container">
+                       <input type="text" class="form-field font-merriweather font20" name="email" placeholder="Your Email Address*" required />
+                       <select id="intern-type" name="type" class="form-field font-merriweather font20" required> 
+                           <option value="" disabled selected>Your Interest</option>
+                           <option value="1">Development</option>
+                           <option value="2">Business</option>
+                           <option value="3">Design</option>
+                       </select>
+                   </div>
+                   <div class="form-container">
+                       <button type="button" id="form-submit" class="button-primary form-field font-merriweather red font20" onclick="changeTo('Submitting...');">Sign Up Now
+                           <span class="arrow">&#9658;</span>
+                        </button>
+                   </div>
+               </form>
+           </div>
+        </div>
+    </body>
+</html>
